@@ -20,16 +20,6 @@ a {
   color: inherit;
 }
 
-a:hover,
-a:visited:hover {
-  color: #ac723f;
-}
-
-a:hover:active,
-a:visited:hover:active {
-  color: #744d2b;
-}
-
 a:visited {
   color: inherit;
 }
@@ -58,6 +48,7 @@ body {
 }
 
 .nav {
+  z-index: 100;
   position: fixed;
   height: 80px;
   display: flex;
@@ -306,8 +297,6 @@ body {
 }
 
 .footer-items {
-  /* width: 30%; */
-  /* padding: 10px 20px; */
   box-sizing: border-box;
 }
 
@@ -340,6 +329,8 @@ body {
   outline: none;
   margin: 5% auto;
   transition: 0.3s;
+  transform: scale(1);
+  transform-origin: left;
 }
 
 .ul-cry {
@@ -354,9 +345,9 @@ body {
   display: block;
 }
 
-.ul a:hover {
-  color: #ff9800;
-  font-size: larger;
+.ul a:hover,
+.ul a:focus {
+  transform: scale(1.2);
 }
 
 .footer-bottom {
