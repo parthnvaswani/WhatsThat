@@ -1,0 +1,231 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's That</title>
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+             <img src="./img/logo.svg" style="height: 70%;"/> 
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <i class="fa fa-bars baricon"></i>
+            <i class="fa fa-times crossicon"></i>
+          </label>
+        </div>
+        
+        <div class="nav-links" style="overflow: hidden;">
+            <a href="#features">Features</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#">Add extension</a>
+            <a href="Documentation.html">Documentation</a>
+        </div>
+    </section>
+
+    <section class="header">
+        
+        <img src="./img/background.svg" class="illustration"/>
+
+        <div>
+          <div class="animate"></div>
+          <h3 class="normal">Now chat unhesitantly </h3>
+          <p>
+            <form action="">
+              <label for="extension">
+                <button class="callto">Add to my browser</button>
+              </label>
+            </form><br>
+            &#9733;&#9733;&#9733;&#9733;&#9734; 4.0<br>
+            Chrome Store reviews<br><br>
+            Trusted by over 10M users worldwide.
+          </p>
+        </div>
+
+    </section>
+
+    <div class="center">
+        <h1 id="features">Features</h1>
+    </div>
+
+    <div class="content">
+      <div>
+        <h2 class="main">New to slang world ?</h2>
+        <h5>No worries, we've got your back !</h5>
+      </div>
+
+      <div>
+        <img src="./img/slang.png" style="width: 90%;"/>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <div>
+        <img src="./img/cuss.png" style="width: 60%;"/>
+      </div>
+
+      <div>
+        <h2 class="main">Does n-word annoy you ?</h2>
+        <h5>No worries, we've got your back again !</h5>
+      </div>
+    </div>
+
+<!------------------------------------------------------- HOW IT WORKS ---------------------------------------------->
+  
+<br><br>
+
+  <div class="center">
+     <h1>How it works</h1>
+  </div>
+
+  <div class="video">
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--                                                              Carousel                                           -->
+
+
+    <div class="center" id="special">
+        <h1>Reviews</h1>
+    </div>
+
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        A very brilliant idea, integrated with top social media platform makes it an complete project.
+        <div class="publisher">
+          Times Of India
+        </div>
+      </div>
+      
+      <div class="mySlides fade">
+        No doubt the tool is superb but on the other hand their website is just mindblowing.
+        <div class="publisher">
+          New York Times
+        </div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+    </div>
+
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+
+<!--------------------------------------------------------- FOOTER ---------------------------------------------------->
+
+    <div class="footer">
+      <div class="inner-footer">
+
+    <!--  for quick links  -->
+        <div class="footer-items">
+          <h3>Quick Links</h3>
+          <div class="border1"></div> <!--for the underline -->
+            <div class="ul">
+              <a href="#"><span>Home</span></a>
+              <a href="#"><span>Description</span></a>
+              <a href="#"><span>Download</span></a>
+              <a href="#"><span>About</span></a>
+            </div>
+        </div>
+    
+    <!--  for some other links -->
+        <div class="footer-items">
+          <h3>Languages</h3>
+          <div class="border1"></div>  <!--for the underline -->
+            <div class="ul">
+              <a href="#"><span>English</span></a>
+              <a href="#"><span>Hindi</span></a>
+              <a href="#"><span>Marathi</span></a>
+              <a href="#"><span>Gujarati</span></a>
+            </div>
+        </div>
+    
+    <!--  for contact us info -->
+        <div class="footer-items">
+          <h3 id="contact">Contact us</h3>
+          <div class="border1"></div>
+            <div class="ul-cry">
+              <span>Group 11, AI_Projects</span>
+              <span>123456789</span>
+              <span>xyz@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="footer-items">
+          <h3>Support us</h3>
+          <div class="border1"></div>
+            <div class="ul">
+              <a href="#" class="fa fa-instagram"><span> Instagram</span></a>
+              <a href="#" class="fa fa-facebook"><span> Facebook</span></a>
+              <a href="#" class="fa fa-twitter"><span> Twitter</span></a>
+              <a href="#" class="fa fa-google"><span> Gmail</span></a>
+            </div> 
+        </div>
+
+      </div>
+      
+    <!--   Footer Bottom start  -->
+      <div class="footer-bottom">
+        &copy; 2020 What's That LLC.
+        <br>
+        <a>Terms of Use</a>
+      </div>
+    </div>
+</body>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (let i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</html>

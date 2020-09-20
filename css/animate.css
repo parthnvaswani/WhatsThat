@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@keyframes typed {
+            
+    0%, 1.1727089202% {
+        content: "W";
+    }
+    1.1737089202%, 2.3464178404% {
+        content: "W ";
+    }
+    2.3474178404%, 27.9332723005% {
+        content: "W T";
+    }
+    27.9342723005%, 28.8722394366% {
+        content: "W ";
+    }
+    28.8732394366%, 29.8112065728% {
+        content: "W";
+    }
+    29.8122065728%, 41.5482957746% {
+        content: "​";
+    }
+    41.5492957746%, 42.7220046948% {
+        content: "W";
+    }
+    42.7230046948%, 43.895713615% {
+        content: "Wh";
+    }
+    43.896713615%, 45.0694225352% {
+        content: "Wha";
+    }
+    45.0704225352%, 46.2431314554% {
+        content: "What";
+    }
+    46.2441314554%, 47.4168403756% {
+        content: "What'";
+    }
+    47.4178403756%, 48.5905492958% {
+        content: "What's";
+    }
+    48.5915492958%, 49.764258216% {
+        content: "What's ";
+    }
+    49.765258216%, 50.9379671362% {
+        content: "What's T";
+    }
+    50.9389671362%, 52.1116760563% {
+        content: "What's Th";
+    }
+    52.1126760563%, 53.2853849765% {
+        content: "What's Tha";
+    }
+    53.2863849765%, 100% {
+        content: "What's That";
+    }
+}
+@keyframes beam-blink {
+    75% {
+        border-color: transparent;
+    }
+}
+
+.animate {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    background-repeat: repeat-y;
+    background-position: center center;
+    background-size: cover, 100% 3px;
+    font-size: calc(20px + 5vw);
+    font-family: 'Satisfy', cursive;
+    color: #bc7f49;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.animate::before {
+    content: "What's That";
+    display: inline-block;
+    padding-right: 3px;
+    padding-right: calc(3px + 0.1vw);
+    font-size: calc(20px + 5vw);
+    border-right: 10px solid #bc7f49;
+    white-space: nowrap;
+    animation: typed 8.52s linear 1, beam-blink 1s infinite;
+}

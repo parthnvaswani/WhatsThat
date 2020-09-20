@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&family=Syne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kufam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Wellfleet&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+  margin-top: 5px;
+  font-size: 3em;
+  font-family: "Syne", sans-serif;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover,
+a:visited:hover {
+  color: #ac723f;
+}
+
+a:hover:active,
+a:visited:hover:active {
+  color: #744d2b;
+}
+
+a:visited {
+  color: inherit;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background: #29241a;
+  border-right: solid #bc7f49;
+  border-width: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  transition: 1px;
+  border-width: 10px;
+}
+
+body {
+  margin: 0px;
+  font-family: "segoe ui";
+  background-color: #ffffff;
+  color: #00121b;
+  font-size: 18px;
+}
+
+.nav {
+  position: fixed;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  margin: 0;
+  width: 100vw;
+  padding: 0 30px;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #00121b;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  padding: 0 30px;
+  margin-left: auto;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  position: relative;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #00121b;
+  outline: none;
+}
+.nav > .nav-links > a::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #00121b;
+  transition: 0.3s;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+.nav > .nav-links > a:hover::after,
+.nav > .nav-links > a:focus::after {
+  transform-origin: right;
+  transform: scaleX(1);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 690px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid black;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease-in;
+    top: 70px;
+    left: 0px;
+  }
+
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+
+  #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  #nav-check:not(:checked) ~ .nav-btn .baricon,
+  #nav-check:checked ~ .nav-btn .crossicon {
+    display: block;
+  }
+  #nav-check:checked ~ .nav-btn .baricon,
+  #nav-check:not(:checked) ~ .nav-btn .crossicon {
+    display: none;
+  }
+  #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+.center {
+  text-align: center;
+  color: #34515e;
+  margin: 2% auto;
+}
+
+.center h1 {
+  font-family: "Wellfleet", cursive;
+}
+
+@media (max-width: 600px) {
+  #special {
+    margin: 100px auto auto auto;
+  }
+}
+
+.content {
+  margin: 4% auto 10% auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  background-color: #f2f0d7;
+  background-color: rgba(248, 248, 255, 0.1);
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.content > div {
+  color: #00121b;
+  margin: 1% auto;
+  font-family: "Kufam", cursive;
+  flex: 50%;
+}
+
+.content div .main {
+  color: orange;
+  margin: 1% auto;
+  font-family: "Satisfy", cursive;
+  font-size: 2em;
+}
+
+@media (max-width: 600px) {
+  .content > div {
+    flex: 100%;
+  }
+
+  .content {
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
+}
+
+/* ====================================================Sections================================= */
+
+.header {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 85vw;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header img {
+  flex: 50%;
+  max-width: 50%;
+  overflow: hidden;
+}
+
+.header div {
+  flex: 50%;
+  text-align: center;
+}
+
+.normal {
+  margin: 0;
+  color: #34515e;
+}
+
+.callto {
+  background-color: rebeccapurple;
+  color: ivory;
+  cursor: pointer;
+  border-radius: 50px;
+  border-style: dashed;
+  line-height: 40px;
+  margin-top: 10%;
+  padding: 0 20px;
+}
+.callto:hover,
+.callto:focus {
+  opacity: 0.8;
+  outline: none;
+}
+.video {
+  height: 95vh;
+}
+/********************************************* Illustrations **************************************/
+
+@media (max-width: 600px) {
+  .illustration {
+    display: none;
+  }
+}
+
+/********************************************* FOOTER *********************************************/
+
+.footer {
+  width: 100%;
+  background: #ffffff;
+  color: #00121b;
+  display: block;
+  margin-top: 10%;
+}
+
+.inner-footer {
+  width: 90%;
+  margin: auto;
+  padding: 30px 10px;
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.footer-items {
+  /* width: 30%; */
+  /* padding: 10px 20px; */
+  box-sizing: border-box;
+}
+
+.footer-items h3 {
+  font-family: "Wellfleet", cursive;
+  font-size: 1.8em;
+  font-weight: normal;
+}
+
+.border1 {
+  height: 3px;
+  width: 40px;
+  background: #ff9800;
+  color: #ff9800;
+  background-color: #ff9800;
+  border: 0px;
+}
+
+.ul {
+  list-style-type: none;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 5% auto;
+}
+
+.ul a {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  margin: 5% auto;
+  transition: 0.3s;
+}
+
+.ul-cry {
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 5% auto;
+}
+
+.ul-cry span {
+  margin: 5% auto;
+  display: block;
+}
+
+.ul a:hover {
+  color: #ff9800;
+  font-size: larger;
+}
+
+.footer-bottom {
+  padding: 10px;
+  background: #ffffff;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* for tablet mode view */
+
+@media screen and (max-width: 1275px) {
+  .footer-items {
+    width: 50%;
+  }
+}
+
+/* for mobile screen view */
+
+@media screen and (max-width: 660px) {
+  .footer-items {
+    width: 100%;
+  }
+}
+
+/*******************************************  Carousel  *******************************************************/
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .slideshow-container {
+    max-width: 300px;
+  }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -20%;
+}
+
+.prev {
+  left: -20%;
+  border-radius: 3px 0 0 3px;
+}
+
+@media (max-width: 700px) {
+  .next,
+  .prev {
+    display: none;
+  }
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+.publisher {
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
