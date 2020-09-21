@@ -115,14 +115,14 @@
       <div class="mySlides fade">
         A very brilliant idea, integrated with top social media platform makes it an complete project.
         <div class="publisher">
-          Times Of India
+          Anonymous
         </div>
       </div>
       
       <div class="mySlides fade">
         No doubt the tool is superb but on the other hand their website is just mindblowing.
         <div class="publisher">
-          New York Times
+          Anonymous
         </div>
       </div>
       
@@ -201,7 +201,7 @@
 </body>
 
   <script>
-    var slideIndex = 1;
+    let slideIndex = 1;
     showSlides(slideIndex);
     
     function plusSlides(n) {
@@ -213,9 +213,9 @@
     }
     
     function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
       if (n > slides.length) {slideIndex = 1}    
       if (n < 1) {slideIndex = slides.length}
       for (let i = 0; i < slides.length; i++) {

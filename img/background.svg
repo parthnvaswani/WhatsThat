@@ -1,8 +1,12 @@
 <svg width="1980" height="1280" xmlns="http://www.w3.org/2000/svg">
  <style>
+    path{
+        fill:#eee;
+    }
     .anim1{
         animation: animate 2s ease infinite alternate;
         transform-origin:bottom;
+        stroke:#555;
     }
     @keyframes animate{
         from{
@@ -15,6 +19,7 @@
     .anim2{
         animation: animate2 2s ease infinite alternate;
         transform-origin:bottom;
+        stroke:#555;
     }
     @keyframes animate2{
         from{
@@ -25,7 +30,7 @@
         }
     }
  </style>
-  <path class="anim2" stroke="#000" id="svg_87" d="m635.467,488.11134l0,0c0,-8.85198 11.75968,-16.02793 26.26599,-16.02793l11.93909,0l0,0l57.30762,0l107.45176,0c6.96619,0 13.64704,1.68865 18.57288,4.69447c4.92581,3.00582 7.69312,7.08259 7.69312,11.33346l0,40.06983l0,0l0,24.04189l0,0c0,8.85199 -11.75968,16.02793 -26.26599,16.02793l-107.45176,0l-74.86534,40.75531l17.55771,-40.75531l-11.93909,0c-14.5063,0 -26.26599,-7.17594 -26.26599,-16.02793l0,0l0,-24.04189l0,0l-0.00001,-40.06983z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
+  <path class="anim2" stroke="#000" id="svg_87" d="m635.467,488.11134l0,0c0,-8.85198 11.75968,-16.02793 26.26599,-16.02793l11.93909,0l0,0l57.30762,0l107.45176,0c6.96619,0 13.64704,1.68865 18.57288,4.69447c4.92581,3.00582 7.69312,7.08259 7.69312,11.33346l0,40.06983l0,0l0,24.04189l0,0c0,8.85199 -11.75968,16.02793 -26.26599,16.02793l-107.45176,0l-74.86534,40.75531l17.55771,-40.75531l-11.93909,0c-14.5063,0 -26.26599,-7.17594 -26.26599,-16.02793l0,0l0,-24.04189l0,0l-0.00001,-40.06983z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff" />
   <path class="anim1" stroke="#000" id="svg_90" d="m1793.75133,565.98178l0,0c0,-14.22285 -15.46912,-25.75275 -34.55125,-25.75275l-15.70512,0l0,0l-75.38455,0l-141.346,0c-9.16358,0 -17.95182,2.71322 -24.43145,7.5428c-6.47959,4.82958 -10.11981,11.3799 -10.11981,18.20995l0,64.38188l0,0l0,38.62912l0,0c0,14.22286 15.46911,25.75275 34.55126,25.75275l141.346,0l98.48062,65.48326l-23.09606,-65.48326l15.70512,0c19.08212,0 34.55125,-11.52989 34.55125,-25.75275l0,0l0,-38.62912l0,0l0.00001,-64.38188z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
   <path class="anim1" stroke="#000" id="svg_91" d="m129.54039,736.91114c53.95422,0 97.69217,33.06316 97.69217,73.84736c0,13.93714 -5.17074,26.95711 -14.06815,38.07471l14.06815,31.08608l-39.16738,-10.13577c-16.3215,9.2636 -36.544,14.81981 -58.5248,14.81981c-53.95428,0 -97.6922,-33.0632 -97.6922,-73.84483c0,-40.78419 43.73792,-73.84736 97.6922,-73.84736l0,0.00001z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
   <path class="anim2" stroke="#000" id="svg_93" d="m1141.54682,620.17257c54.37906,0 98.46142,33.40756 98.46142,74.61658c0,14.08232 -5.21145,27.23791 -14.17892,38.47131l14.17892,31.40988l-39.47579,-10.24135c-16.45002,9.3601 -36.83175,14.97418 -58.98563,14.97418c-54.37912,0 -98.46145,-33.40759 -98.46145,-74.61402c0,-41.20901 44.08232,-74.61658 98.46145,-74.61658l0,0.00001z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="#fff"/>
@@ -58,11 +63,11 @@
 <text style="font-size:50;" class="anim1" fill="#000000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="1590" y="220" id="svg_111" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(1.4038983583450315,0,0,1.4038983583450315,-692.95565434359,-45.22679809480905)
  " stroke="#000">NP</text>
 
-<path class="anim1" stroke="#000" style="vector-effect: non-scaling-stroke;" id="svg_2" d="m746.13072,1237.27046l44.3651,-79.0814l0,0c-47.00126,-23.85535 -60.41301,-68.79372 -30.98484,-103.81928c29.42761,-35.02536 92.06547,-48.67466 144.70716,-31.53317c52.64167,17.14139 78.06087,59.46334 58.72312,97.77465c-19.33672,38.31129 -77.10094,60.0736 -133.44975,50.27594l-83.36079,66.38326z" stroke-width="1" fill="#fff"/>
-  <text style="font-size:60;" class="anim1" stroke="#000" transform="matrix(4.534249782562256,0,0,2.5985124111175533,-3319.085335195065,-1362.445637643337) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_3" y="1110" x="780" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">?</text>
-  <text style="font-size:60;" class="anim1" stroke="#000" transform="matrix(6.656755141197776,0,0,4.037360508894554,-5190.465385076419,-2803.309977970732) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_4" y="1080" x="850" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">*</text>
-  <text style="font-size:60;" class="anim1" stroke="#000" transform="matrix(2.6638472080230713,0,0,2.3320937156677246,-1663.821210410446,-1144.2476877942681) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_5" y="1100" x="900" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">#</text>
-  <text style="font-size:60;" class="anim1" stroke="#000" transform="matrix(4.096597638484923,0,0,2.0172556434750533,-3281.790762094194,-852.8007444087402) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_6" y="1150" x="850" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">!</text>
+<path class="anim1" stroke="#555" style="vector-effect: non-scaling-stroke;" id="svg_2" d="m746.13072,1237.27046l44.3651,-79.0814l0,0c-47.00126,-23.85535 -60.41301,-68.79372 -30.98484,-103.81928c29.42761,-35.02536 92.06547,-48.67466 144.70716,-31.53317c52.64167,17.14139 78.06087,59.46334 58.72312,97.77465c-19.33672,38.31129 -77.10094,60.0736 -133.44975,50.27594l-83.36079,66.38326z" stroke-width="2" fill="#fff"/>
+  <text style="font-size:60;" class="anim1" stroke="#000" transform="matrix(4.534249782562256,0,0,2.5985124111175533,-3319.085335195065,-1362.445637643337) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_3" y="1110" x="780" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="black">?</text>
+  <text style="font-size:60;" class="anim1" stroke="#000" transform="matrix(6.656755141197776,0,0,4.037360508894554,-5190.465385076419,-2803.309977970732) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_4" y="1080" x="850" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="black">*</text>
+  <text style="font-size:60;" class="anim1" stroke="#000" transform="matrix(2.6638472080230713,0,0,2.3320937156677246,-1663.821210410446,-1144.2476877942681) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_5" y="1100" x="900" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="black">#</text>
+  <text style="font-size:60;" class="anim1" stroke="#000" transform="matrix(4.096597638484923,0,0,2.0172556434750533,-3281.790762094194,-852.8007444087402) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_6" y="1150" x="850" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="black">!</text>
 
 
 </svg>
