@@ -57,23 +57,23 @@
     </div>
 
     <div class="content">
-      <div>
+      <div class="fade_in left">
         <h2 class="main">New to slang world ?</h2>
         <h5>No worries, we've got your back !</h5>
       </div>
 
-      <div>
+      <div class="fade_in right">
         <img src="./img/slang.png" style="width: 90%;"/>
       </div>
     </div>
 
     <div class="content">
 
-      <div>
+      <div class="fade_in left">
         <img src="./img/cuss.png" style="width: 60%;"/>
       </div>
 
-      <div>
+      <div class="fade_in right">
         <h2 class="main">Does n-word annoy you ?</h2>
         <h5>No worries, we've got your back again !</h5>
       </div>
@@ -88,20 +88,8 @@
   </div>
 
   <div class="video">
-
+    <video src="./videos/1. About this Course.mp4" muted="true" controls></video>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
     <!--                                                              Carousel                                           -->
 
 
@@ -225,6 +213,36 @@
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
     }
+
+    let video=document.querySelector('.video video');
+    let options={
+      threshold:.5,
+      rootMargin:"0px 0px -150px 0px"
+    }
+    let observer=new IntersectionObserver((e,o)=>{
+      if(!e[0].isIntersecting) return;
+      else {
+        video.play()
+        o.unobserve(e[0].target)
+      }
+    },options)
+    observer.observe(video);
+
+
+    let fader=document.querySelectorAll('.fade_in');
+    let observer2=new IntersectionObserver((entries,o)=>{
+      entries.forEach(e=>{
+        
+      if(!e.isIntersecting) return;
+      else {
+        e.target.classList.add('anim');
+        o.unobserve(e.target)
+      }
+      })
+    },options)
+    fader.forEach(e=>{
+      observer2.observe(e);
+    })
     </script>
 </body>
 

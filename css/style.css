@@ -45,6 +45,7 @@ body {
   background-color: #ffffff;
   color: #00121b;
   font-size: 18px;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -179,6 +180,15 @@ body {
 }
 
 @media (max-width: 600px) {
+  h2 {
+    font-size: 1.5em !important;
+  }
+  h3 {
+    font-size: 1.2em !important;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
   #special {
     margin: 100px auto auto auto;
   }
@@ -271,8 +281,11 @@ body {
   opacity: 0.8;
   outline: none;
 }
-.video {
-  height: 95vh;
+.video video {
+  display: block;
+  height: auto;
+  width: 85vw;
+  margin: 60px auto;
 }
 /********************************************* Illustrations **************************************/
 
@@ -493,4 +506,21 @@ img {
   position: relative;
   top: 100px;
   text-align: center;
+}
+
+.fade_in.left {
+  opacity: 0;
+  transform: translateX(-30%);
+  transition: 0.5s;
+}
+.fade_in.right {
+  opacity: 0;
+  transform: translateX(30%);
+  transition: 0.5s;
+}
+
+.fade_in.left.anim,
+.fade_in.right.anim {
+  opacity: 1;
+  transform: translateX(0%);
 }
