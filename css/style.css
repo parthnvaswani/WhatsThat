@@ -284,6 +284,7 @@ body {
 .video video {
   display: block;
   height: auto;
+  max-height: 750px;
   width: 85vw;
   margin: 60px auto;
 }
