@@ -24,8 +24,8 @@
         </div>
         
         <div class="nav-links" style="overflow: hidden;">
-            <a href="#features">Features</a>
-            <a href="#contact">Contact Us</a>
+            <a href="#features" onclick="uncheck()" >Features</a>
+            <a href="#contact" onclick="uncheck()" >Contact Us</a>
             <a href="./files/whatsthat.zip">Add extension</a>
             <a href="./Docs/index.html">Documentation</a>
         </div>
@@ -243,6 +243,12 @@
     fader.forEach(e=>{
       observer2.observe(e);
     })
+
+    function onclick(){
+      let checkbox=document.querySelector('#nav-check');
+      if(checkbox.checked)
+      checkbox.checked=false;
+    } 
     </script>
 </body>
 
